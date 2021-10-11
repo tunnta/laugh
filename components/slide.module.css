@@ -1,0 +1,18 @@
+.font {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: hsl(160, 100%, 75%);
+    word-break: break-all;
+    }
+.block{
+
+    display: block;
+    
+    
+}
