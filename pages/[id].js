@@ -14,13 +14,17 @@ if (isLoading) return <div>Loading...</div>;
 
   const router = useRouter()
   const id = router.query.id
+
   
+
+if (!user == []){
   const fetcher = () => fetch('http://localhost:3001/title/' + id + '/' + user.sub).then(response => response.json());
-  
-  
-
-  const { data, error } = useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
-
+  var{data,error} = useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
+}
+else{
+  const fetcher = () => fetch('http://localhost:3001/title/' + id).then(response => response.json());
+  var{data,error} = useSWR('http://localhost:3001/title/' + id , fetcher);
+}
   
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
