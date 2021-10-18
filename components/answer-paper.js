@@ -12,7 +12,7 @@ export default function AnswerPaper(props) {
     const ref = useRef([]);
 
     const [colstate , setState] = useState(props.data);
-    console.log(colstate[0].good);
+    
     
     //同じデータだとuseStateの再描画が起こらないため、空のarrayを追加
     const array = []
@@ -47,7 +47,7 @@ export default function AnswerPaper(props) {
 
      if (good == "gray")
 
-        fetch('http://localhost:3001/good_users', {
+        fetch('https://kakkowarai.herokuapp.com/good_users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -62,7 +62,7 @@ export default function AnswerPaper(props) {
 
     else
 
-     fetch('http://localhost:3001/good_users', {
+     fetch('https://kakkowarai.herokuapp.com/good_users', {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'

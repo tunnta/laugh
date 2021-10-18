@@ -6,7 +6,7 @@ import InteractiveList from '../components/ranklist'
 
 export async function getServerSideProps() {
   // posts を取得するため外部 API endpoint を読み込む
-  const res =  await fetch('http://localhost:3001/title')
+  const res =  await fetch('https://kakkowarai.herokuapp.com/title')
   const posts = await res.json()
 
   // { props: { posts } }を返すことで、

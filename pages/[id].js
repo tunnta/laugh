@@ -18,12 +18,12 @@ if (isLoading) return <div>Loading...</div>;
   
 
 if (!user == []){
-  const fetcher = () => fetch('http://localhost:3001/title/' + id + '/' + user.sub).then(response => response.json());
-  var{data,error} = useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
+  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub).then(response => response.json());
+  var{data,error} = useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub, fetcher);
 }
 else{
-  const fetcher = () => fetch('http://localhost:3001/title/' + id).then(response => response.json());
-  var{data,error} = useSWR('http://localhost:3001/title/' + id , fetcher);
+  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' + id).then(response => response.json());
+  var{data,error} = useSWR('https://kakkowarai.herokuapp.com/title/' + id , fetcher);
 }
   
   if (error) return <div>failed to load</div>

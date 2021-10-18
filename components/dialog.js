@@ -26,7 +26,7 @@ export default function FormDialog(props) {
   };
 
   const handlePost = () => {
-    fetch('http://localhost:3001/answer', {
+    fetch('https://kakkowarai.herokuapp.com/answer', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

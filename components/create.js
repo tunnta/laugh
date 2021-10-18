@@ -35,7 +35,7 @@ export default function CreateTitle(props) {
      
     const titlePost=()=>{
       
-      fetch('http://localhost:3001/title', {
+      fetch('https://kakkowarai.herokuapp.com/title', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

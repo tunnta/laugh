@@ -11,9 +11,9 @@ export default function userpage() {
 
   if (isLoading) return <div>Loading...</div>;
 
-  const fetcher = () => fetch('http://localhost:3001/user_title/' + user.sub).then(response => response.json());
+  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/user_title/' + user.sub).then(response => response.json());
   
-  const { data, error } = useSWR('http://localhost:3001/user_title/' + user.sub, fetcher);
+  const { data, error } = useSWR('https://kakkowarai.herokuapp.com/user_title/' + user.sub, fetcher);
     
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
