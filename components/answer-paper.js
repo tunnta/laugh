@@ -114,7 +114,7 @@ export default function AnswerPaper(props) {
       <div style ={root}>  
           {props.data.map((prop) => (  
 
-          <Paper elevation={0} style = {paperstyle}>{prop.answer}
+          <Paper key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
 
           
           
