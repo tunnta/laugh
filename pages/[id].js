@@ -4,7 +4,7 @@ import useSWR from 'swr'
 
 import { useUser } from '@auth0/nextjs-auth0';
 
-const getquery = () => {
+const Getquery = () => {
 
   const router = useRouter()
   return  router.query.id
@@ -16,7 +16,7 @@ export default function Bar() {
 
 if (isLoading) return <div>Loading...</div>;
  
-const id = getquery();
+const id = Getquery();
 
 if (!user == []){
   const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub).then(response => response.json());
