@@ -18,14 +18,12 @@ if (isLoading) return <div>Loading...</div>;
  
 const id = Getquery();
 
-if (!user == []){
-  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub).then(response => response.json());
-  var{data,error} = useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub, fetcher);
+if (user == undefined){
+  user = {sub:"emp"}
 }
-else{
-  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' + id).then(response => response.json());
-  var{data,error} = useSWR('https://kakkowarai.herokuapp.com/title/' + id , fetcher);
-}
+
+  const fetcher = () => fetch('http://localhost:3001/title/' +id + '/' + user.sub).then(response => response.json());
+  var{data,error} = useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
   
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
