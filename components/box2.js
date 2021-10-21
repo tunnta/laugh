@@ -4,7 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Link from 'next/link';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
     
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
     width:250,
     padding:'10% 10% 0% 10%',
     
-    color: theme.palette.text.secondary,
+   
     wordBreak:'break-all',
     
 
