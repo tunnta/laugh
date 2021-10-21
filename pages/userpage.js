@@ -7,7 +7,7 @@ import { useUser } from '@auth0/nextjs-auth0';
 const Getfetch = (user) => {
 
   const fetcher = () => fetch('http://localhost:3001/user_title/' + user.sub).then(response => response.json());
-  return { data, error } = useSWR('http://localhost:3001/user_title/' + user.sub, fetcher);
+  return useSWR('http://localhost:3001/user_title/' + user.sub, fetcher);
 }
 
 const Getuser = () => {
