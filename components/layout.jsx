@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Header from './header';
 import { UserProvider } from '@auth0/nextjs-auth0';
 
-const Layout = ({ user, loading = false, children }) => (
+function Layout({ user, loading = false, children }){
   <UserProvider value={{ user, loading }}>
     <Head>
       <title>Next.js with Auth0</title>
@@ -30,6 +30,6 @@ const Layout = ({ user, loading = false, children }) => (
       }
     `}</style>
   </UserProvider>
-);
+};
 
 export default Layout;

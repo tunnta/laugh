@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import { useUser } from '@auth0/nextjs-auth0';
 
-const Header = () => {
+function Header(){
   const { user, loading } = useUser();
 
   return (
