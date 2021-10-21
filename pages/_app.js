@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 import CssBaseline from '@material-ui/core/CssBaseline';
-import theme from './theme';
+
 import { UserProvider } from '@auth0/nextjs-auth0';
 
 function MyApp(props) {
