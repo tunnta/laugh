@@ -13,7 +13,7 @@ import FormGroup from '@material-ui/core/FormGroup';
 import Grid from '@material-ui/core/Grid';
 
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
       maxWidth: 752,
@@ -24,11 +24,11 @@ const useStyles = makeStyles(() => ({
       
     },
     demo: {
-     
+      backgroundColor: theme.palette.background.paper,
       
     },
     title: {
-      
+      margin: theme.spacing(0, 7, 0),
     },
   }));
   

@@ -17,15 +17,18 @@ import Box from '@material-ui/core/Box';
 
 
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
   toolbar: {
     minHeight: 158,
     alignItems: 'flex-start',
-   
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(2),
     
   },
   title: {
@@ -35,7 +38,8 @@ const useStyles = makeStyles(() => ({
     marginBottom:'3%',
   },
   large: {
-    
+    width: theme.spacing(9),
+    height: theme.spacing(9),
     marginLeft:'10%',
     marginTop:'5%'
   },
