@@ -10,6 +10,12 @@ const Getquery = () => {
   return  router.query.id
 }
 
+const Getfetch = (id,user) => {
+
+  const fetcher = () => fetch('http://localhost:3001/title/' +id + '/' + user.sub).then(response => response.json());
+  return useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
+}
+
 export default function Bar() {
 
   const { user, isLoading } = useUser();
@@ -22,8 +28,7 @@ if (user == undefined){
   user = {sub:"emp"}
 }
 
-  const fetcher = () => fetch('http://localhost:3001/title/' +id + '/' + user.sub).then(response => response.json());
-  var{data,error} = useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
+  const {data,error} = Getfetch(id,user);
   
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
