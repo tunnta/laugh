@@ -30,13 +30,17 @@ const Header = () => {
                 </Link>
                 </li>{' '}
                 <li>
-                  <a href="/api/auth/logout">Logout</a>
+                <Link href="/api/auth/logout">
+                  <a>Logout</a>
+                </Link>
                 </li>
               </>
             ) : (
               <>
                 <li>
-                  <a href="/api/auth/login">Login</a>
+                <Link href="/api/auth/login">
+                  <a>Login</a>
+                </Link>
                 </li>
               </>
             ))}

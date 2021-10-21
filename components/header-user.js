@@ -81,6 +81,9 @@ const Styleset = () => {
   return useStyles();
 }
 
+const Rset = () => {
+  return React.useState(0);
+}
 
 export default function PromAppBar(props) {
 
@@ -90,7 +93,7 @@ if (isLoading) return <div>Loading...</div>;
 if (error) return <div>{error.message}</div>;
 
   const classes = Styleset();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = Rset();
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
