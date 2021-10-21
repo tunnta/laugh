@@ -77,6 +77,10 @@ function a11yProps(index) {
   };
 }
 
+const Styleset = () => {
+  return useStyles();
+}
+
 
 export default function PromAppBar(props) {
 
@@ -85,7 +89,7 @@ export default function PromAppBar(props) {
 if (isLoading) return <div>Loading...</div>;
 if (error) return <div>{error.message}</div>;
 
-  const classes = useStyles();
+  const classes = Styleset();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
