@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => ({
       
     },
     demo: {
-      backgroundColor: theme.palette.background.paper,
+     
       
     },
     title: {
