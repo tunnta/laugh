@@ -1,7 +1,7 @@
 import { createTheme } from '@material-ui/core/styles';
 
 // Create a theme instance.
-function Theme(){
+
 
  const theme = createTheme({
   palette: {
@@ -13,5 +13,5 @@ function Theme(){
     },
   },
 });
-}
-export default Theme;
+
+export default theme;
