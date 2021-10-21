@@ -49,7 +49,7 @@ const useStyles = makeStyles(() => ({
 
 }));
 
-export default function PromAppBar(props) {
+function PromAppBar(props) {
 
     const classes = useStyles();
     
@@ -70,3 +70,5 @@ if (error) return <div>{error.message}</div>;
       </div>
     );
   }
+
+  export default PromAppBar;

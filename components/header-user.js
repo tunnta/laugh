@@ -85,7 +85,7 @@ const Rset = () => {
   return React.useState(0);
 }
 
-export default function PromAppBar(props) {
+function PromAppBar(props) {
 
   const { user, error, isLoading } = useUser();
 
@@ -143,3 +143,4 @@ if (error) return <div>{error.message}</div>;
     </div>
   );
 }
+export default PromAppBar;

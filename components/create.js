@@ -13,7 +13,7 @@ import {React,useState} from 'react'
 import { Grid,Paper} from '@material-ui/core'
 import TextField from '@material-ui/core/TextField'
 
-export default function CreateTitle(props) {
+function CreateTitle(props) {
 
   const [select, setSelect] = useState("200")
     const handleselect = (e) => setSelect(e.target.value) 
@@ -142,3 +142,5 @@ export default function CreateTitle(props) {
       </div>
   )
 }
+
+export default CreateTitle;

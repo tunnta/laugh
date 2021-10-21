@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 }
 
 
-export default function Bar({posts}) {
+function Index({posts}) {
 
 
   return (
@@ -38,4 +38,6 @@ export default function Bar({posts}) {
     
   )
 }
+
+export default Index;
 

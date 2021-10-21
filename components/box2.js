@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 
 const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:920}
 
-export default function AutoGrid(props) {
+function AutoGrid(props) {
   const classes = useStyles();
 
   return (
@@ -58,3 +58,5 @@ export default function AutoGrid(props) {
     </Paper>
   );
 }
+
+export default AutoGrid;

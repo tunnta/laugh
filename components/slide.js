@@ -14,7 +14,7 @@ import styles from '../styles/slide.module.css'
 // install Swiper modules
 SwiperCore.use([EffectCoverflow,Autoplay,Navigation, Pagination, Scrollbar, A11y]);
 
-export default function Slide(props) {
+function Slide(props) {
   
   
 
@@ -48,3 +48,5 @@ export default function Slide(props) {
   );
   
 };
+
+export default Slide;

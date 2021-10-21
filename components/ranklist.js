@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
     );
   }
   
-  export default function InteractiveList() {
+function InteractiveList() {
     const classes = useStyles();
    
   
@@ -77,3 +77,5 @@ const useStyles = makeStyles((theme) => ({
       </div>
     );
   }
+
+  export default InteractiveList;

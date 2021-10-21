@@ -5,7 +5,7 @@ import { useUser } from '@auth0/nextjs-auth0';
 import React,{useRef,useState} from 'react'
 
 
-export default function AnswerPaper(props) {
+function AnswerPaper(props) {
 
     const paperstyle = {height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/edge1.png)','backgroundSize':'cover'}
     const root = {'position':'absolute'}
@@ -140,3 +140,4 @@ export default function AnswerPaper(props) {
     
            
 }
+export default AnswerPaper;

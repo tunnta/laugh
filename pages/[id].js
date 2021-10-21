@@ -16,7 +16,7 @@ const Getfetch = (id,user) => {
   return useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
 }
 
-export default function Bar() {
+function Bar() {
 
   const { user, isLoading } = useUser();
 
@@ -50,3 +50,5 @@ return (
 )
 
 }
+
+export default Bar;

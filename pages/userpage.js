@@ -14,7 +14,7 @@ const Getuser = () => {
   return useUser();
 }
 
-export default function userpage() {
+function UserPage() {
 
   const { user, isLoading } = Getuser();
 
@@ -41,3 +41,5 @@ export default function userpage() {
     
   )
 }
+
+export default UserPage;

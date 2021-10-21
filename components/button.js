@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function IconLabelButtons() {
+function IconLabelButtons() {
   const classes = useStyles();
 
   return (
@@ -32,3 +32,4 @@ export default function IconLabelButtons() {
     </div>
   );
 }
+export default IconLabelButtons;

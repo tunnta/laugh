@@ -8,7 +8,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 import { useUser } from '@auth0/nextjs-auth0';
 import {useState} from 'react'
 
-export default function FormDialog(props) {
+function FormDialog(props) {
   const [open, setOpen] = React.useState(false);
 
   const [answer, setAnswer] = useState('')
@@ -101,3 +101,5 @@ export default function FormDialog(props) {
     );
   
 }
+
+export default FormDialog;
