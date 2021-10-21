@@ -9,7 +9,7 @@ import 'swiper/components/navigation/navigation.min.css';
 import 'swiper/components/pagination/pagination.min.css';
 import 'swiper/components/scrollbar/scrollbar.min.css';
 
-import styles from './slide.module.css'
+import styles from '../styles/slide.module.css'
 
 // install Swiper modules
 SwiperCore.use([EffectCoverflow,Autoplay,Navigation, Pagination, Scrollbar, A11y]);
