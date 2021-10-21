@@ -4,9 +4,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import SaveIcon from '@material-ui/icons/Save';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   button: {
-    margin: theme.spacing(1),
+    
     'position':'absolute',
     'bottom':'0',
     marginBottom:'60%',
