@@ -3,7 +3,8 @@ import { createTheme } from '@material-ui/core/styles';
 // Create a theme instance.
 
 function Theme(){
-return createTheme({
+ let theme;
+return  theme = createTheme({
   palette: {
     primary: {
       main: '#556cd6',
