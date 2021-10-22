@@ -12,8 +12,8 @@ const Getquery = () => {
 
 const Getfetch = (id,user) => {
 
-  const fetcher = () => fetch('http://localhost:3001/title/' +id + '/' + user.sub).then(response => response.json());
-  return useSWR('http://localhost:3001/title/' + id + '/' + user.sub, fetcher);
+  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' +id + '/' + user.sub).then(response => response.json());
+  return useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub, fetcher);
 }
 
 function Bar() {
