@@ -19,7 +19,7 @@ export async function getServerSideProps() {
 }
 
 
-export function Index({posts}) {
+function Index({posts}) {
 
 
   return (
@@ -39,5 +39,5 @@ export function Index({posts}) {
   )
 }
 
-
+export default Index;
 
