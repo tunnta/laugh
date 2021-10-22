@@ -4,7 +4,7 @@ import { createTheme } from '@material-ui/core/styles';
 
 function Theme(){
 
-return createTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: '#556cd6',
@@ -14,6 +14,7 @@ return createTheme({
     },
   },
 });
+return theme
 };
 
 
