@@ -18,7 +18,7 @@ const Getfetch = (id,user) => {
 
 function Bar() {
 
-  const { user, isLoading } = useUser();
+  let { user, isLoading } = useUser();
 
 if (isLoading) return <div>Loading...</div>;
  
