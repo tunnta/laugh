@@ -15,12 +15,13 @@ export async function getServerSideProps() {
   return {
     props: {
       posts,
+      posts2,
     },
   }
 }
 
 
-function Index({posts}) {
+function Index({posts,posts2}) {
 
 
   return (
