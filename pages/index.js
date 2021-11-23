@@ -8,7 +8,7 @@ export async function getServerSideProps() {
   // posts を取得するため外部 API endpoint を読み込む
   const res =  await fetch('https://kakkowarai.herokuapp.com/title')
   const posts = await res.json()
-  const res2 =  await fetch('http://localhost:3001/title_content0')
+  const res2 =  await fetch('https://kakkowarai.herokuapp.com/title_content0')
   const posts2 = await res2.json()
   // { props: { posts } }を返すことで、
   // Blog コンポーネントはビルド時に`posts`を prop として受け取る
