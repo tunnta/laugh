@@ -81,7 +81,7 @@ export default function AutoGrid(props) {
       cou = (Np - 1) * 9 + i ;
       array[i] = [arrayAll[cou][0],arrayAll[cou][1],arrayAll[cou][2]];
     };
-    
+
     setP(Np - 1);
     setArray(array);
   }
@@ -113,7 +113,7 @@ if (max == 9 && Np == 0)return (
 
     {Array.map((array) => (
       
-      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2], content: 1 }}}>
 
       <Grid item >
       
@@ -148,7 +148,7 @@ if (Np > 0 && arrayAll.length - Np * 9 <= 9)return (
 
     {Array.map((array) => (
       
-      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 1}}}>
 
       <Grid item >
       
@@ -184,7 +184,7 @@ if (Np > 0 && arrayAll.length - Np * 9 > 9)return (
 
     {Array.map((array) => (
       
-      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 1}}}>
 
       <Grid item >
       

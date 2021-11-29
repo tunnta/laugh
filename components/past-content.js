@@ -124,7 +124,7 @@ export default function PastContent(props) {
 
       {Array.map((array) => (
         
-        <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+        <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
 
         <Grid item >
         
@@ -156,7 +156,7 @@ if (max == 9 && Np == 0)return (
 
     {Array.map((array) => (
       
-      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
 
       <Grid item >
       
@@ -191,7 +191,7 @@ if (Np > 0 && arrayAll.length - Np * 9 <= 9)return (
 
     {Array.map((array) => (
       
-      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
 
       <Grid item >
       
@@ -229,7 +229,7 @@ if (Np > 0 && arrayAll.length - Np * 9 > 9)return (
 
     {Array.map((array) => (
       
-      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+      <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2], content: 0 }}}>
 
       <Grid item >
       
