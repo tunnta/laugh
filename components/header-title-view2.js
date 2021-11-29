@@ -60,7 +60,7 @@ function PromAppBar(props) {
 if (isLoading) return <div>Loading...</div>;
 if (error) return <div>{error.message}</div>;  
 
-if(props.count === 1 && props.title[0].answer === "emp")  return (
+if(props.title[0].answer === "emp")  return (
   <div> 
 
   </div>
