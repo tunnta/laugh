@@ -35,7 +35,7 @@ if (user == undefined){
   user = {sub:"emp"}
 }
 
-  const {data,error} = Getfetch(id,user);
+  const {data,error} = Getfetch(id,user,contentNumber);
   
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
