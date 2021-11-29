@@ -70,7 +70,7 @@ function AnswerPaper(props) {
     if (props.data && user) return (
         <div>  
             {props.data.map((prop,index) => (  
-
+            <div style = {goodstyle}>
             <Paper key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
             
               <IconButton 
@@ -78,13 +78,13 @@ function AnswerPaper(props) {
                 onClick = {() => {goodPost(prop.id,ref.current[prop.id].current.style.Color),ChangeColor(prop.id,ref.current[prop.id].current.style.Color,index)}}
               >
                <div id = {prop.id} ref = {ref.current[prop.id]} style={{Color: colstate[index].good}}>
-                 <div style = {goodstyle}>
+                 
                     <RecommendIcon style = {{color: colstate[index].good}}/>
-                 </div>
+                 
                </div>
              </IconButton>
             </Paper>
-
+         </div>
             ))}
         </div>
     )

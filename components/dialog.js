@@ -30,7 +30,7 @@ function FormDialog(props) {
         },
           body: JSON.stringify({
           answer: answer,
-          title_id: props.title.id,
+          content_id: props.title.id,
           user_sub: user.sub,         
         })
       })
