@@ -90,7 +90,7 @@ function AnswerPaper(props) {
     )
 
     if (props.data) return (
-      <div style ={root}>  
+      <div>  
           {props.data.map((prop) => (  
              <Paper key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
              </Paper>
