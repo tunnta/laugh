@@ -10,10 +10,16 @@ const Getquery = () => {
   return  router.query.id
 }
 
-const Getfetch = (id,user) => {
+const GetqueryContent = () => {
 
-  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' +id + '/' + user.sub).then(response => response.json());
-  return useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub, fetcher);
+  const router2 = useRouter()
+  return  router2.query.content
+}
+
+const Getfetch = (id,user,contentNumber) => {
+
+  const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' +id + '/' + user.sub+ '/' + contentNumber).then(response => response.json());
+  return useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub+ '/' + contentNumber, fetcher);
 }
 
 function Bar() {
@@ -23,6 +29,7 @@ function Bar() {
 if (isLoading) return <div>Loading...</div>;
  
 const id = Getquery();
+const contentNumber = GetqueryContent();
 
 if (user == undefined){
   user = {sub:"emp"}
@@ -33,21 +40,31 @@ if (user == undefined){
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
 
- 
-  console.log(data)
   
 
-return (
+  if (contentNumber==1) return (
 
 <div>
 
 
-<PromAppBar title = {data}/>
+<PromAppBar title = {data} count = {1}/>
 
 
 </div>
 
 )
+
+if (contentNumber==0) return (
+
+  <div>
+  
+  
+  <AppBar title = {data} count = {0}/>
+  
+  
+  </div>
+  
+  )
 
 }
 

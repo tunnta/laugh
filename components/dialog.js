@@ -10,11 +10,8 @@ import {useState} from 'react'
 
 function FormDialog(props) {
   const [open, setOpen] = React.useState(false);
-
   const [answer, setAnswer] = useState('')
   const handleChange = (e) => setAnswer(e.target.value) 
-
-           
   const { user } = useUser();
 
   const handleClickOpen = () => {
@@ -27,11 +24,11 @@ function FormDialog(props) {
 
   const handlePost = () => {
     fetch('https://kakkowarai.herokuapp.com/answer', {
-        method: 'POST',
-        headers: {
+          method: 'POST',
+          headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
+          body: JSON.stringify({
           answer: answer,
           title_id: props.title.id,
           user_sub: user.sub,         
@@ -47,8 +44,7 @@ function FormDialog(props) {
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle></DialogTitle>
-        <DialogContent>
-          
+        <DialogContent>  
           <TextField
             autoFocus
             margin="dense"
@@ -60,6 +56,7 @@ function FormDialog(props) {
             variant="standard"
           />
         </DialogContent>
+
         <DialogActions>
           <Button onClick={handleClose}>閉じる</Button>
           <Button onClick={handlePost}>投稿</Button>
@@ -69,35 +66,31 @@ function FormDialog(props) {
     );
 
     if(!user) return(
+      <div>
+        <Button variant="outlined" onClick={handleClickOpen}>
+          Open form dialog
+        </Button>
+        <Dialog open={open} onClose={handleClose}>
+          <DialogTitle></DialogTitle>
+          <DialogContent>
 
-<div>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Open form dialog
-      </Button>
-      <Dialog open={open} onClose={handleClose}>
-        <DialogTitle></DialogTitle>
-        <DialogContent>
-          
-          <TextField
-            autoFocus
-            margin="dense"
-            id="name"
-            InputProps={{
+            <TextField
+              autoFocus
+              margin="dense"
+              id="name"
+              InputProps={{
               readOnly: true,
-            }}
-            defaultValue="ログイン後のみ投稿可能です"
-            fullWidth
-            variant="standard"
-            
-          />
-        </DialogContent>
+              }}
+              defaultValue="ログイン後のみ投稿可能です"
+              fullWidth
+              variant="standard"
+            />
+          </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>閉じる</Button>
         </DialogActions>
       </Dialog>
     </div>
-  
-
     );
   
 }

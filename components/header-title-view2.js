@@ -5,6 +5,8 @@ import { useUser } from '@auth0/nextjs-auth0';
 import yellow from "@material-ui/core/colors/yellow";
 import FormDialog from './dialog';
 import AnswerPaper from './answer-paper';
+import AnswerPaper0 from './answer-paper0';
+
 const useStyles = makeStyles(() => ({
     
     paper: {
@@ -53,12 +55,18 @@ function PromAppBar(props) {
 
     const classes = useStyles();
     
-    const { user, error, isLoading } = useUser();
+    const { error, isLoading } = useUser();
 
 if (isLoading) return <div>Loading...</div>;
 if (error) return <div>{error.message}</div>;  
 
-    return (
+if(props.count === 1 && props.title[0].answer === "emp")  return (
+  <div> 
+
+  </div>
+  )
+
+  if(props.count === 1)  return (
       <div >  
   
     
@@ -66,6 +74,18 @@ if (error) return <div>{error.message}</div>;
 
                <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
                <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
+  
+      </div>
+    );
+
+    if(props.count === 0)  return (
+      <div >  
+  
+    
+                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 150 +'%'}}>{props.title[0][0].title}</Paper>
+
+               <Paper elevation={0} className={classes.paper2} ></Paper>
+               <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>
   
       </div>
     );

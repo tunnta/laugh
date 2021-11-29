@@ -18,8 +18,6 @@ function IconLabelButtons() {
 
   return (
     <div>
-      
-      
       <Button
         variant="contained"
         color="primary"
