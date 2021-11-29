@@ -59,7 +59,7 @@ if (contentNumber==0) return (
   <div>
   
   
-  <AppBar title = {data} count = {0}/>
+  <PromAppBar title = {data} count = {0}/>
   
   
   </div>
