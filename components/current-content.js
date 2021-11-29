@@ -92,7 +92,7 @@ export default function AutoGrid(props) {
           <Grid container spacing={4}>
 
             {Array.map((array) => (
-                <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] }}}>
+                <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 1}}}>
                   <Grid item >
                     <Paper className={classes.paper} style = {{fontSize:array[1] + '%'}} >{array[0]}</Paper>
                   </Grid>
