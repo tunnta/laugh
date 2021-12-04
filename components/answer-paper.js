@@ -65,13 +65,13 @@ function AnswerPaper(props) {
     })
     }
 
-//以下四択　
+//以下三択　
 
     if (props.data && user) return (
         <div>  
             {props.data.map((prop,index) => (  
-            <div style = {goodstyle}>
-            <Paper key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
+            <div style = {goodstyle} key ={prop.id}>
+            <Paper elevation={0} style = {paperstyle}>{prop.answer}
             
               <IconButton 
                 aria-label="recommend"
