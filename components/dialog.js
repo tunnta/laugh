@@ -34,7 +34,7 @@ function FormDialog(props) {
           user_sub: user.sub,         
         })
       })
-      location.reload()
+      
   };
 
   if (user) return (
