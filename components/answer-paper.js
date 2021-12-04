@@ -70,21 +70,21 @@ function AnswerPaper(props) {
     if (props.data && user) return (
         <div>  
             {props.data.map((prop,index) => (  
-            <div style = {goodstyle} key ={prop.id}>
-            <Paper elevation={0} style = {paperstyle}>{prop.answer}
             
-              <IconButton 
-                aria-label="recommend"
-                onClick = {() => {goodPost(prop.id,ref.current[prop.id].current.style.Color),ChangeColor(prop.id,ref.current[prop.id].current.style.Color,index)}}
-              >
-               <div id = {prop.id} ref = {ref.current[prop.id]} style={{Color: colstate[index].good}}>
+            <Paper　key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
+              <div style = {goodstyle} >
+                <IconButton 
+                  aria-label="recommend"
+                  onClick = {() => {goodPost(prop.id,ref.current[prop.id].current.style.Color),ChangeColor(prop.id,ref.current[prop.id].current.style.Color,index)}}
+                >
+                  <div id = {prop.id} ref = {ref.current[prop.id]} style={{Color: colstate[index].good}}>
                  
                     <RecommendIcon style = {{color: colstate[index].good}}/>
                  
-               </div>
-             </IconButton>
+                  </div>
+                </IconButton>
+              </div>
             </Paper>
-         </div>
             ))}
         </div>
     )
