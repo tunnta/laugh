@@ -2,7 +2,6 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import { useUser } from '@auth0/nextjs-auth0';
-import blue from "@material-ui/core/colors/blue";
 import FormDialog from './dialog';
 import AnswerPaper from './answer-paper';
 import AnswerPaper0 from './answer-paper0';
@@ -19,7 +18,7 @@ const useStyles = makeStyles(() => ({
         padding:'1% 1% 1% 1%',
         'position':'absolute',
         wordBreak:'break-all',
-        border: `3px solid ${blue[330]}`,
+        border: `3px solid #808080`,
         
       },
       paper2: {
@@ -30,7 +29,7 @@ const useStyles = makeStyles(() => ({
         padding:'1% 1% 1% 1%',
         'position':'absolute',
         wordBreak:'break-all',
-        border: `3px solid ${blue[300]}`,
+        border: `3px solid #808080`,
         'backgroundImage':'url(donut.png)',
         'backgroundSize':'contain',
         "background-position":"left bottom",
@@ -46,7 +45,7 @@ const useStyles = makeStyles(() => ({
         padding:'1% 1% 1% 1%',
         right:0,
         wordBreak:'break-all',
-        border: `3px solid ${yellow[200]}`,
+        border: `3px solid #808080`,
     
       },
 
