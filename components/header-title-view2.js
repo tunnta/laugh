@@ -10,16 +10,14 @@ const useStyles = makeStyles(() => ({
     
     paper: {
     
-    
         height:'49.3vh',
-        
         width:400,
         margin:'0% 0% 0% 0%',
         padding:'1% 1% 1% 1%',
         'position':'absolute',
         wordBreak:'break-all',
         border: `3px solid #808080`,
-        
+        'textAlign': 'center'
       },
       paper2: {
     
@@ -81,12 +79,12 @@ if(props.title[0].answer === "emp")  return (
     if(props.count === 0)  return (
       <div >  
   
-    
+            <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
                 <Paper elevation={0} className={classes.paper} style = {{'textAlign': 'center',fontSize:props.title[0][0].size + 150 +'%'}}>{props.title[0][0].title}</Paper>
 
                <Paper elevation={0} className={classes.paper2} ></Paper>
                <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>
-  
+            </Paper>
       </div>
     );
   }
