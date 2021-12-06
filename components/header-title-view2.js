@@ -2,7 +2,7 @@ import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import { makeStyles } from '@material-ui/core/styles';
 import { useUser } from '@auth0/nextjs-auth0';
-import yellow from "@material-ui/core/colors/yellow";
+import blue from "@material-ui/core/colors/blue";
 import FormDialog from './dialog';
 import AnswerPaper from './answer-paper';
 import AnswerPaper0 from './answer-paper0';
@@ -19,21 +19,22 @@ const useStyles = makeStyles(() => ({
         padding:'1% 1% 1% 1%',
         'position':'absolute',
         wordBreak:'break-all',
-        border: `3px solid ${yellow[200]}`,
-    
+        border: `3px solid ${blue[330]}`,
+        
       },
       paper2: {
     
-    
         height:'51.5vh',
-        
         width:400,
         margin:'25.06% 0% 0% 0%',
         padding:'1% 1% 1% 1%',
         'position':'absolute',
         wordBreak:'break-all',
-        border: `3px solid ${yellow[200]}`,
-    
+        border: `3px solid ${blue[300]}`,
+        'backgroundImage':'url(donut.png)',
+        'backgroundSize':'contain',
+        "background-position":"left bottom",
+        "backgroundRepeat":"no-repeat",
       },
       paper3: {
         'position':'absolute',
@@ -69,12 +70,12 @@ if(props.title[0].answer === "emp")  return (
   if(props.count === 1)  return (
       <div >  
   
-    
+  <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
                 <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 150 +'%'}}>{props.title[0][0].title}</Paper>
 
                <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
                <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
-  
+  </Paper>
       </div>
     );
 
@@ -82,7 +83,7 @@ if(props.title[0].answer === "emp")  return (
       <div >  
   
     
-                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 150 +'%'}}>{props.title[0][0].title}</Paper>
+                <Paper elevation={0} className={classes.paper} style = {{'textAlign': 'center',fontSize:props.title[0][0].size + 150 +'%'}}>{props.title[0][0].title}</Paper>
 
                <Paper elevation={0} className={classes.paper2} ></Paper>
                <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>

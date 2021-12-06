@@ -21,7 +21,6 @@ const useStyles = makeStyles((theme) => ({
     height:'30vh',
     width:250,
     padding:'10% 10% 0% 10%',
-    color: theme.palette.text.secondary,
     wordBreak:'break-all',
   },
 }));

@@ -13,6 +13,6 @@
 .block{
 
     display: block;
-    
+    min-width: 1048px;
     
 }

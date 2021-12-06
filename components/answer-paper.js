@@ -7,7 +7,7 @@ import React,{useRef,useState} from 'react'
 
 function AnswerPaper(props) {
 
-    const paperstyle = {'position':'relative',height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/edge1.png)','backgroundSize':'cover','textAlign': 'center'}
+    const paperstyle = {'position':'relative',height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/f1391_2.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'cover','textAlign': 'center'}
     const goodstyle = {'position':'absolute',bottom: 0,marginBottom:20}
     const ref = useRef([]);
 
