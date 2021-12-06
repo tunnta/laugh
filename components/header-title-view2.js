@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
     paper: {
     
         height:'49.3vh',
-        width:400,
+        width:365,
         margin:'0% 0% 0% 0%',
         padding:'1% 1% 1% 1%',
         'position':'absolute',
