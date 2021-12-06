@@ -68,7 +68,7 @@ if(props.title[0].answer === "emp")  return (
       <div >  
   
   <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
-                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 150 +'%'}}>{props.title[0][0].title}</Paper>
+                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 150 +'%','textAlign': 'center'}}>{props.title[0][0].title}</Paper>
 
                <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
                <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
