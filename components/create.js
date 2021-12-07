@@ -1,14 +1,11 @@
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
 import Typography from '@material-ui/core/Typography';
-
 import { Select } from '@material-ui/core';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
-
 import { useUser } from '@auth0/nextjs-auth0';
-
 import {React,useState} from 'react'
 import { Grid,Paper} from '@material-ui/core'
 import TextField from '@material-ui/core/TextField'
@@ -27,9 +24,6 @@ function CreateTitle(props) {
     const lookImage={'position':'absolute',margin:'10% 10% 0% 10%',textAlign:"center",'whiteSpace':'preLine',"fontSize":select+"%"}
     const selectStyle={'right':'10%','position':'absolute',width:60}
     const typeStyle={'marginTop':'40%','position':'absolute'}
-
-    
-
     const { user } = useUser();
      
   const titlePost=()=>{

@@ -100,6 +100,7 @@ function AnswerPaper(props) {
 
     if (!props.data) return(
         <div>  
+          loginして、お題を投稿！
         </div>
     )
 
