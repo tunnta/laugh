@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:920,top:30}
+const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:920,top:30,textAlign:"center"}
 
 const arrow = {'position':'relative','left':'85%'}
 const arrowhidden = {'visibility':'hidden'}
