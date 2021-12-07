@@ -27,7 +27,7 @@ function Index({posts,posts2}) {
   return (
     <div>
       <Header/>
-    <Slide Name1 = "sss"/>
+    <Slide/>
 
     <InteractiveList/>
 

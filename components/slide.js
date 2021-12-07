@@ -36,12 +36,10 @@ function Slide(props) {
       
     >
       
-      <SwiperSlide><div className={styles.font}>Slide 1</div></SwiperSlide>
-      <SwiperSlide><div className={styles.font}>{props.Name1}</div></SwiperSlide>
-      <SwiperSlide><div className={styles.font}>Slide 3</div></SwiperSlide>
-      <SwiperSlide><div className={styles.font}>Slide 4</div></SwiperSlide>
-      
-      
+      <SwiperSlide className={styles.container}><div className={styles.img1}></div></SwiperSlide>
+      <SwiperSlide className={styles.container}><div className={styles.img2}></div></SwiperSlide>
+      <SwiperSlide className={styles.container}><div className={styles.img3}></div></SwiperSlide>
+      <SwiperSlide className={styles.container}><div className={styles.img4}></div></SwiperSlide>
       
     </Swiper>
     </div>
