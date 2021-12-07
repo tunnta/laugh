@@ -1,17 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-
 import ListItem from '@material-ui/core/ListItem';
 import FolderIcon from '@material-ui/icons/Folder';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-
 import ListItemText from '@material-ui/core/ListItemText';
 import Typography from '@material-ui/core/Typography';
-
 import FormGroup from '@material-ui/core/FormGroup';
-
 import Grid from '@material-ui/core/Grid';
-
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -20,12 +15,9 @@ const useStyles = makeStyles((theme) => ({
       'right':'0',
       'position':'absolute',
       'margin-right':'5%',
-      
-      
     },
     demo: {
       backgroundColor: theme.palette.background.paper,
-      
     },
     title: {
       margin: theme.spacing(0, 7, 0),
@@ -47,11 +39,8 @@ function InteractiveList() {
     return (
       <div className={classes.root}>
         <FormGroup row>
-          
-          
         </FormGroup>
-        <Grid container spacing={2}>
-          
+        <Grid container spacing={2}>  
           <Grid item xs={12} md={12}>
             <Typography variant="h6" className={classes.title}>
               ranking
