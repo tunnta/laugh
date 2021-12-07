@@ -49,7 +49,7 @@ function Header(){
 
       <style jsx>{`
         header {
-          padding: 0.2rem;
+          padding: 0.05rem;
           color: #fff;
           background-color: #333;
         }
