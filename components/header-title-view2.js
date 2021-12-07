@@ -60,7 +60,7 @@ if (error) return <div>{error.message}</div>;
 
 if(props.title[0].answer === "emp")  return (
   <div> 
-
+loginして、お題を投稿！
   </div>
   )
 
