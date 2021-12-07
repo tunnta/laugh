@@ -32,8 +32,11 @@ function CreateTitle(props) {
 
     const { user } = useUser();
      
-    const titlePost=()=>{
-      
+  const titlePost=()=>{
+
+    if (title == []){alert( "空欄です")}
+
+    else{
       fetch('https://kakkowarai.herokuapp.com/title', {
         method: 'POST',
         headers: {
@@ -48,8 +51,8 @@ function CreateTitle(props) {
       })
 
       location.reload()
-
     }
+  }
 
     
   if (props.title[0] == 1) return (

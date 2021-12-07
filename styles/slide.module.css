@@ -16,3 +16,52 @@
     min-width: 1048px;
     
 }
+.container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 200px;
+    
+    
+}
+.img1 {
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/mail.png);
+    
+    }    
+.img2 {
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/next.png);
+        
+    } 
+.img3 {
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/2021.png);
+        
+    } 
+.img4 {
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center center;
+    width: 100%;
+    height: 100%;
+    background-image: url(/faq.png);
+        
+    } 
