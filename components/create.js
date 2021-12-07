@@ -91,7 +91,7 @@ function CreateTitle(props) {
 
                 <Button
                   variant="contained"
-                  color="primary"
+                  color="secondary"
                   size="large"
                   onClick={titlePost}
                   startIcon={<SaveIcon />}
