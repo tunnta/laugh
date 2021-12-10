@@ -18,6 +18,7 @@ export async function getServerSideProps() {
     props: {
       posts,
       posts2,
+      posts3,
     },
   }
 }
