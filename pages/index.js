@@ -2,7 +2,7 @@ import Slide from '../components/slide'
 import Header from '../components/header'
 import PastContent from '../components/past-content'
 import AutoGrid from '../components/current-content'
-import InteractiveList from '../components/ranklist'
+import FolderList from '../components/ranklist'
 
 export async function getServerSideProps() {
   // posts を取得するため外部 API endpoint を読み込む
@@ -10,6 +10,8 @@ export async function getServerSideProps() {
   const posts = await res.json()
   const res2 =  await fetch('https://kakkowarai.herokuapp.com/title_content0')
   const posts2 = await res2.json()
+  const res3 =  await fetch('http://kakkowarai.herokuapp.com/title_rank')
+  const posts3 = await res3.json()
   // { props: { posts } }を返すことで、
   // Blog コンポーネントはビルド時に`posts`を prop として受け取る
   return {
@@ -20,24 +22,15 @@ export async function getServerSideProps() {
   }
 }
 
-
-function Index({posts,posts2}) {
-
-
+function Index({posts,posts2,posts3}) {
   return (
     <div>
       <Header/>
-    <Slide/>
-
-    <InteractiveList/>
-
-    <AutoGrid title = {posts}/>
-    <PastContent title = {posts2}/>
-        
+      <Slide/>
+      <FolderList rank = {posts3}/>
+      <AutoGrid title = {posts}/>
+      <PastContent title = {posts2}/>
     </div>
-
-    
-    
   )
 }
 

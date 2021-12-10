@@ -31,7 +31,8 @@ function FormDialog(props) {
           body: JSON.stringify({
           answer: answer,
           content_id: props.title.id,
-          user_sub: user.sub,         
+          user_sub: user.sub,
+          name: user.name,           
         })
       })
       location.reload()
