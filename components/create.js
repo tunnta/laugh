@@ -21,7 +21,7 @@ function CreateTitle(props) {
     const paperStyle={'position':'relative', padding :20,height:'82vh',width:580, margin:"20px auto"}
     const paper3Style={'bottom': '15%','left':'28.5%','position':'absolute',height:'30vh',width:250, margin:"0% 4% 2% 0%", backgroundColor: "hsl(160, 100%, 75%)","overflow": "hidden"}
     const textfield={width:270,'bottom':'0','position':'absolute',margin:"0% 0% 55% 0%",'right':'27%'}
-    const lookImage={'position':'absolute',margin:'10% 6% 0% 6%',textAlign:"center",'whiteSpace':'preLine',"fontSize":select+"%"}
+    const lookImage={'position':'absolute',margin:'10% 3% 0% 3%',textAlign:"center",'whiteSpace':'preLine',"fontSize":select+"%"}
     const selectStyle={'right':'10%','position':'absolute',width:60}
     const typeStyle={'marginTop':'40%','position':'absolute'}
     const { user } = useUser();
