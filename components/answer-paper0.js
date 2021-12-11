@@ -19,21 +19,21 @@ export default function AnswerPaper0(props) {
         <Paper elevation={0} style = {paperstyle1}>{props.data[0].answer}
           <div style = {goodstyle}>       
             <RecommendIcon/>
-            {props.data[0].count}
+            {props.data[0].count} by {props.data[0].name}
           </div>
         </Paper>
 
         <Paper elevation={0} style = {paperstyle2}>{props.data[1].answer}
           <div style = {goodstyle}>       
             <RecommendIcon/>
-            {props.data[1].count}
+            {props.data[1].count} by {props.data[1].name}
           </div>
         </Paper>
 
         <Paper elevation={0} style = {paperstyle3}>{props.data[2].answer}
           <div style = {goodstyle}>       
             <RecommendIcon/>
-            {props.data[2].count}
+            {props.data[2].count}  by {props.data[2].name}
           </div>
         </Paper>
 
@@ -41,7 +41,7 @@ export default function AnswerPaper0(props) {
         <Paper key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
           <div style = {goodstyle}>
             <RecommendIcon/>
-            {props.data[index + 3].count}
+            {props.data[index + 3].count}  by {props.data[index + 3].name}
           </div>
         </Paper>
     ))} 
@@ -55,7 +55,7 @@ if (props.data.length === 1) return (
         <Paper elevation={0} style = {paperstyle1}>{props.data[0].answer}
           <div style = {goodstyle}>           
             <RecommendIcon/>
-            {props.data[0].count}
+            {props.data[0].count} by {props.data[0].name}
           </div>
         </Paper>
 
@@ -69,14 +69,14 @@ if (props.data.length === 2) return (
            <Paper elevation={0} style = {paperstyle1}>{props.data[0].answer}
              <div style = {goodstyle}>
                 <RecommendIcon/>
-                {props.data[0].count}
+                {props.data[0].count} by {props.data[0].name}
              </div>
            </Paper>
 
            <Paper elevation={0} style = {paperstyle2}>{props.data[1].answer}
              <div style = {goodstyle}>
                 <RecommendIcon/>
-                {props.data[1].count}
+                {props.data[1].count} by {props.data[1].name}
              </div>
            </Paper>
 
@@ -90,21 +90,21 @@ if (props.data.length === 3) return (
            <Paper elevation={0} style = {paperstyle1}>{props.data[0].answer} 
               <div style = {goodstyle}>
                 <RecommendIcon style = {{color:"black"}}/>
-                {props.data[0].count}
+                {props.data[0].count} by {props.data[0].name}
               </div>
             </Paper>
 
             <Paper elevation={0} style = {paperstyle2}>{props.data[1].answer}
               <div style = {goodstyle}>
                 <RecommendIcon/>
-                {props.data[1].count}
+                {props.data[1].count} by {props.data[1].name}
               </div>
            </Paper>
 
            <Paper elevation={0} style = {paperstyle3}>{props.data[2].answer}
                <div style = {goodstyle}>
                  <RecommendIcon />
-                 {props.data[2].count}
+                 {props.data[2].count} by {props.data[2].name}
                </div> 
            </Paper>
 
