@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     width:250,
     padding:'10% 10% 0% 10%',
     wordBreak:'break-all',
+    overflow: "hidden"
   },
 }));
 

@@ -17,7 +17,8 @@ const useStyles = makeStyles(() => ({
         'position':'absolute',
         wordBreak:'break-all',
         border: `3px solid #808080`,
-        'textAlign': 'center'
+        'textAlign': 'center',
+        overflow: "hidden",
       },
       paper2: {
     
@@ -68,7 +69,7 @@ loginして、お題を投稿！
       <div >  
   
   <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
-                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 150 +'%','textAlign': 'center'}}>{props.title[0][0].title}</Paper>
+                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%','textAlign': 'center'}}>{props.title[0][0].title}</Paper>
 
                <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
                <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
@@ -80,7 +81,7 @@ loginして、お題を投稿！
       <div >  
   
             <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
-                <Paper elevation={0} className={classes.paper} style = {{'textAlign': 'center',fontSize:props.title[0][0].size + 150 +'%'}}>{props.title[0][0].title}</Paper>
+                <Paper elevation={0} className={classes.paper} style = {{'textAlign': 'center',fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
 
                <Paper elevation={0} className={classes.paper2} ></Paper>
                <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>
