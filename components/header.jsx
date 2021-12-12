@@ -10,16 +10,6 @@ function Header(){
     <header>
       <nav>
         <ul>
-          <li>
-            <Link href="/">
-              <a>Home</a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/help">
-              <a>Help</a>
-            </Link>
-          </li>
           
           {!loading &&
             (user ? (
