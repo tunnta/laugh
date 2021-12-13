@@ -79,7 +79,7 @@ function AnswerPaper(props) {
                 >
                   <div id = {prop.id} ref = {ref.current[prop.id]} >
                  
-                    <RecommendIcon style = {{color: colstate[index].good}}/>
+                    <RecommendIcon style = {{Color: colstate[index].good}}/>
                  
                   </div>
                 </IconButton>
