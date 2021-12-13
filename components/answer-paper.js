@@ -77,9 +77,9 @@ function AnswerPaper(props) {
                   aria-label="recommend"
                   onClick = {() => {goodPost(prop.id,ref.current[prop.id].current.style.Color),ChangeColor(prop.id,ref.current[prop.id].current.style.Color,index)}}
                 >
-                  <div id = {prop.id} ref = {ref.current[prop.id]} >
+                  <div id = {prop.id}>
                  
-                    <RecommendIcon style = {{Color: colstate[index].good}}/>
+                    <RecommendIcon ref = {ref.current[prop.id]} style = {{color: colstate[index].good}}/>
                  
                   </div>
                 </IconButton>
