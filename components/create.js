@@ -48,7 +48,7 @@ function CreateTitle(props) {
         })
       })
 
-      setTimeout(doReload, 5000);
+      setTimeout(doReload, 3000);
     }
   }
 
