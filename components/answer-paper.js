@@ -2,7 +2,7 @@ import Paper from '@material-ui/core/Paper';
 import IconButton from '@mui/material/IconButton';
 import RecommendIcon from '@mui/icons-material/Recommend';
 import { useUser } from '@auth0/nextjs-auth0';
-import React,{useRef,useState} from 'react'
+import React,{useRef,useState,useEffect} from 'react'
 
 
 function AnswerPaper(props) {
@@ -16,10 +16,12 @@ function AnswerPaper(props) {
     //同じデータだとuseStateの再描画が起こらないため、空のarrayを追加
     const array = []
     const onemom = props.data.concat(array);
-   
+
+    useEffect(()=>{
     props.data.forEach((prop) => {
       ref.current[prop.id] = React.createRef();
     });
+    })
 
     const { user } = useUser();
     const ChangeColor = (i,good,index) => {
