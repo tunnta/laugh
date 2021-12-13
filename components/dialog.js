@@ -71,7 +71,7 @@ function FormDialog(props) {
     </div>
     );
 
-  if (user) return (
+  if (user && props.title != "presence") return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
         Open form dialog
