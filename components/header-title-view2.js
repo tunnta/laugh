@@ -65,27 +65,33 @@ loginして、お題を投稿！
   </div>
   )
 
-  if(props.count === 1)  return (
-      <div >  
-  
-  <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
-                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
+  if(props.count === 1 && props.title[2] == "presence")  return (
+    <div >  
+      <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
+          <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
+          <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[2]}/></Paper>
+          <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
+      </Paper>
+    </div>
+  );
 
-               <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
-               <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
-  </Paper>
+  if(props.count === 1 && props.title[2] == "nothing")  return (
+      <div >  
+        <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
+            <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
+            <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
+            <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
+        </Paper>
       </div>
     );
 
     if(props.count === 0)  return (
       <div >  
-  
-            <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
-                <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
-
-               <Paper elevation={0} className={classes.paper2} ></Paper>
-               <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>
-            </Paper>
+        <Paper style ={{"height":"100%","width":"100%","position":"relative"}}>
+          <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
+          <Paper elevation={0} className={classes.paper2} ></Paper>
+          <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>
+        </Paper>
       </div>
     );
   }

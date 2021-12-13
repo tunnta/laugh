@@ -14,6 +14,10 @@ function FormDialog(props) {
   const handleChange = (e) => setAnswer(e.target.value) 
   const { user } = useUser();
 
+  const doReload=()=>{
+    window.location.reload();
+  }
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -35,8 +39,37 @@ function FormDialog(props) {
           name: user.name,           
         })
       })
-      location.reload()
+      setTimeout(doReload, 1000);
   };
+
+  if (user && props.title == "presence") return (
+    <div>
+      <Button variant="outlined" onClick={handleClickOpen}>
+        Open form dialog
+      </Button>
+      <Dialog open={open} onClose={handleClose}>
+        <DialogTitle></DialogTitle>
+        <DialogContent>  
+          <TextField
+            autoFocus
+            margin="dense"
+            id="name"
+            InputProps={{
+              readOnly: true,
+              }}
+              defaultValue="ログイン後のみ投稿可能です"
+            fullWidth
+            variant="standard"
+          />
+        </DialogContent>
+
+        <DialogActions>
+          <Button onClick={handleClose}>閉じる</Button>
+          <Button onClick={handlePost}>投稿</Button>
+        </DialogActions>
+      </Dialog>
+    </div>
+    );
 
   if (user) return (
     <div>
