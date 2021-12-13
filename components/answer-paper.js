@@ -10,18 +10,18 @@ function AnswerPaper(props) {
     const paperstyle = {'position':'relative',height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/f1391_2.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
     const goodstyle = {'position':'absolute',bottom: 0,marginBottom:20}
     const ref = useRef([]);
-
+    
     const [colstate , setState] = useState(props.data);
     
     //同じデータだとuseStateの再描画が起こらないため、空のarrayを追加
     const array = []
     const onemom = props.data.concat(array);
 
-    useEffect(()=>{
+    
     props.data.forEach((prop) => {
       ref.current[prop.id] = React.createRef();
     });
-    })
+    
 
     const { user } = useUser();
     const ChangeColor = (i,good,index) => {
