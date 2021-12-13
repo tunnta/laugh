@@ -42,7 +42,7 @@ function FormDialog(props) {
       setTimeout(doReload, 1000);
   };
 
-  if (user && props.title[0] == "presence") return (
+  if (user && props.title == "presence") return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
         Open form dialog
@@ -71,7 +71,7 @@ function FormDialog(props) {
     </div>
     );
 
-  if (user && props.title[0] != "presence") return (
+  if (user && props.title != "presence") return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
         Open form dialog
