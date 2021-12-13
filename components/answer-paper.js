@@ -71,13 +71,13 @@ function AnswerPaper(props) {
         <div>  
             {props.data.map((prop,index) => (  
             
-            <Paper　key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
+            <Paper key ={prop.id} elevation={0} style = {paperstyle}>{prop.answer}
               <div style = {goodstyle} >
                 <IconButton 
                   aria-label="recommend"
                   onClick = {() => {goodPost(prop.id,ref.current[prop.id].current.style.Color),ChangeColor(prop.id,ref.current[prop.id].current.style.Color,index)}}
                 >
-                  <div id = {prop.id} ref = {ref.current[prop.id]} style={{Color: colstate[index].good}}>
+                  <div id = {prop.id} ref = {ref.current[prop.id]} >
                  
                     <RecommendIcon style = {{color: colstate[index].good}}/>
                  
