@@ -65,7 +65,6 @@ function FormDialog(props) {
 
         <DialogActions>
           <Button onClick={handleClose}>閉じる</Button>
-          <Button onClick={handlePost}>投稿</Button>
         </DialogActions>
       </Dialog>
     </div>
