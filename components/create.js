@@ -25,6 +25,10 @@ function CreateTitle(props) {
     const selectStyle={'right':'10%','position':'absolute',width:60}
     const typeStyle={'marginTop':'40%','position':'absolute'}
     const { user } = useUser();
+    
+    const doReload=()=>{
+      window.location.reload();
+    }
      
   const titlePost=()=>{
 
@@ -44,7 +48,7 @@ function CreateTitle(props) {
         })
       })
 
-      location.reload()
+      setTimeout(doReload, 100);
     }
   }
 
