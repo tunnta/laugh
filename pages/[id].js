@@ -19,7 +19,7 @@ const GetqueryContent = () => {
 const Getfetch = (id,user,contentNumber) => {
 
   const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' +id + '/' + user.sub+ '/' + contentNumber).then(response => response.json());
-  return useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub+ '/' + contentNumber, fetcher, {refreshInterval: 0,revalidateOnFocus: false});
+  return useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub+ '/' + contentNumber, fetcher, {revalidateOnReconnect	: false,revalidateOnFocus: false});
 }
 
 function Bar() {
