@@ -19,7 +19,7 @@ const GetqueryContent = () => {
 const Getfetch = (id,user,contentNumber) => {
 
   const fetcher = () => fetch('https://kakkowarai.herokuapp.com/title/' +id + '/' + user.sub+ '/' + contentNumber).then(response => response.json());
-  return useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub+ '/' + contentNumber, fetcher);
+  return useSWR('https://kakkowarai.herokuapp.com/title/' + id + '/' + user.sub+ '/' + contentNumber, fetcher, {refreshInterval: 0,revalidateOnFocus: false});
 }
 
 function Bar() {
@@ -36,7 +36,7 @@ if (user == undefined){
 }
 
   const {data,error} = Getfetch(id,user,contentNumber);
-  
+
   if (error) return <div>failed to load</div>
   if (!data) return <div>loading...</div>
 
