@@ -2,7 +2,7 @@ import Paper from '@material-ui/core/Paper';
 import IconButton from '@mui/material/IconButton';
 import RecommendIcon from '@mui/icons-material/Recommend';
 import { useUser } from '@auth0/nextjs-auth0';
-import React,{useRef,useState,useEffect} from 'react'
+import React,{useRef,useState} from 'react'
 
 
 function AnswerPaper(props) {
@@ -27,11 +27,11 @@ function AnswerPaper(props) {
     const ChangeColor = (i,good,index) => {
       
       if (good == "gray")
-         ref.current[i].current.style.Color = "blue"
+         ref.current[i].current.style.color = "blue"
           
       if (good == "blue")
-        ref.current[i].current.style.Color = "gray"  
-        onemom[index].good = ref.current[i].current.style.Color;
+        ref.current[i].current.style.color = "gray"  
+        onemom[index].good = ref.current[i].current.style.color;
         setState(onemom);
         console.log(colstate[index].good)
       }
@@ -77,11 +77,11 @@ function AnswerPaper(props) {
               <div style = {goodstyle} >
                 <IconButton 
                   aria-label="recommend"
-                  onClick = {() => {goodPost(prop.id,ref.current[prop.id].current.style.Color),ChangeColor(prop.id,ref.current[prop.id].current.style.Color,index)}}
+                  onClick = {() => {goodPost(prop.id,ref.current[prop.id].current.style.color),ChangeColor(prop.id,ref.current[prop.id].current.style.color,index)}}
                 >
-                  <div id = {prop.id}>
+                  <div id = {prop.id} style = {{color: colstate[index].good}}>
                  
-                    <RecommendIcon ref = {ref.current[prop.id]} style = {{color: colstate[index].good}}/>
+                    <RecommendIcon ref = {ref.current[prop.id]} style = {{color: prop.good}}/>
                  
                   </div>
                 </IconButton>
