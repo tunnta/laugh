@@ -10,8 +10,8 @@ const useStyles = makeStyles(() => ({
     
     paper: {
     
-        height:'49.3vh',
-        width:365,
+        height:'50vh',
+        width:'28.5vw',
         margin:'0% 0% 0% 0%',
         padding:'1% 1% 1% 1%',
         'position':'absolute',
@@ -22,9 +22,9 @@ const useStyles = makeStyles(() => ({
       },
       paper2: {
     
-        height:'51.5vh',
-        width:400,
-        margin:'25.06% 0% 0% 0%',
+        height:'50.4vh',
+        width:'28.5vw',
+        bottom: '0%',
         padding:'1% 1% 1% 1%',
         'position':'absolute',
         wordBreak:'break-all',
@@ -37,9 +37,9 @@ const useStyles = makeStyles(() => ({
       paper3: {
         'position':'absolute',
         'overflow-y':'scroll',
-        
-        height:'100.5vh',
-        width:900,
+        right:'0%',
+        height:'100vh',
+        width:'71.7vw',
         margin:'0% 0% 0% 0%',
         padding:'1% 1% 1% 1%',
         right:0,

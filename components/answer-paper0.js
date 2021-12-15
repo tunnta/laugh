@@ -6,10 +6,10 @@ import React from 'react'
 
 export default function AnswerPaper0(props) {
 
-    const paperstyle = {'position':'relative',height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/f1391_2.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
-    const paperstyle1 = {'position':'relative',height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/f0919_5.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
-    const paperstyle2 = {'position':'relative',height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/f0919_52.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
-    const paperstyle3 = {'position':'relative',height:'40vh',width:820,padding:90,fontSize:30,'backgroundImage':'url(/f0919_53.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
+    const paperstyle = {'position':'relative',height:'40vh',width:'100%',padding:90,fontSize:30,'backgroundImage':'url(/f1391_2.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
+    const paperstyle1 = {'position':'relative',height:'40vh',width:'100%',padding:90,fontSize:30,'backgroundImage':'url(/f0919_5.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
+    const paperstyle2 = {'position':'relative',height:'40vh',width:'100%',padding:90,fontSize:30,'backgroundImage':'url(/f0919_52.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
+    const paperstyle3 = {'position':'relative',height:'40vh',width:'100%',padding:90,fontSize:30,'backgroundImage':'url(/f0919_53.png)',"backgroundRepeat":"noRepeat",'backgroundSize':'100% 100%',"backgroundPosition":"center center",'textAlign': 'center'}
     const goodstyle = {'position':'absolute',bottom: 0,marginBottom:20}
     const array = props.data.slice( 3 );
 
