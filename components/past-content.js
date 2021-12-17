@@ -8,13 +8,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import MediaQuery from "react-responsive";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
     'left':'0',
     'display': 'block',
     'position':'absolute',
-    'margin-left':'5%',
+    'margin-left':'1%',
     'margin-top':'2%',
   },
   paper: {
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     'display': 'block',
     height:'15vh',
     width:'29vw',
-    padding:'10% 10% 0% 10%',
+    padding:'3% 3% 0% 3%',
     overflow: "hidden",
     wordBreak:'break-all',
   },
@@ -191,7 +191,7 @@ return(
               {Array.map((array) => (
                 <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                   <Grid item >
-                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 160 + '%'}} >{array[0]}</Paper>
+                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 200 + '%'}} >{array[0]}</Paper>
                   </Grid>
                 </Link>
               ))}
@@ -207,7 +207,7 @@ return(
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 160 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 200 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -230,7 +230,7 @@ return(
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 160 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 200 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -250,7 +250,7 @@ return(
                   {Array.map((array) => (
                     <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2], content: 0 }}}>
                       <Grid item >
-                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 160 + '%'}} >{array[0]}</Paper>
+                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 200 + '%'}} >{array[0]}</Paper>
                       </Grid>
                     </Link>
                   ))}
