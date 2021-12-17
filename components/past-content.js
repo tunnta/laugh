@@ -183,7 +183,7 @@ return(
           </div>
       )}
     </MediaQuery>
-    <MediaQuery minWidth={401}>
+    <MediaQuery maxWidth={400}>
       {max < 9 && arrayAll.length < 9&&(
         <Paper style={backgraoundStyle2}>
           <div className={classes.root}>
