@@ -105,12 +105,12 @@ return(
 
     {props.count === 1 && props.title[2] == "presence"&&(
       <div> 
-        <MediaQuery minWidth={401}>
+        <MediaQuery minWidth={414}>
           <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[2]}/></Paper>
           <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
         </MediaQuery>
-        <MediaQuery maxWidth={400}>
+        <MediaQuery maxWidth={414}>
           <Paper elevation={0} className={classes.mobile} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.mobile1} ><FormDialog title = {props.title[2]}/></Paper>
           <Paper elevation={0} className={classes.mobile2} ><AnswerPaper data = {props.title[1]}/></Paper>
@@ -120,12 +120,12 @@ return(
 
     {props.count === 1 && props.title[2] == "nothing"&&(
       <div>
-        <MediaQuery minWidth={401}>
+        <MediaQuery minWidth={414}>
           <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
           <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
         </MediaQuery>
-        <MediaQuery maxWidth={400}>
+        <MediaQuery maxWidth={414}>
           <Paper elevation={0} className={classes.mobile} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.mobile1} ><FormDialog title = {props.title[0][0]}/></Paper>
           <Paper elevation={0} className={classes.mobile2} ><AnswerPaper data = {props.title[1]}/></Paper>
@@ -135,12 +135,12 @@ return(
 
     {props.count === 0 &&(
       <div > 
-        <MediaQuery minWidth={401}>
+        <MediaQuery minWidth={414}>
           <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.paper2} ></Paper>
           <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>
         </MediaQuery>
-        <MediaQuery maxWidth={400}>
+        <MediaQuery maxWidth={414}>
           <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.paper1} ></Paper>
           <Paper elevation={0} className={classes.paper2} ><AnswerPaper0 data = {props.title[1]}/></Paper>
