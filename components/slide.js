@@ -20,7 +20,7 @@ function Slide() {
 
   return (
    <div className = {styles.block}>
-      <MediaQuery minWidth={401}>
+      <MediaQuery query="(min-width: 400px)">
         <Swiper
           autoplay={{
           "delay": 6000,
@@ -41,7 +41,7 @@ function Slide() {
           <SwiperSlide className={styles.container}><div className={styles.img4}></div></SwiperSlide>
         </Swiper>
       </MediaQuery>
-      <MediaQuery maxWidth={400}>
+      <MediaQuery query="(max-width: 400px)">
         <Swiper
           autoplay={{
           "delay": 6000,
