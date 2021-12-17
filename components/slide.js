@@ -1,7 +1,7 @@
 import SwiperCore, {EffectCoverflow, Autoplay,Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import MediaQuery from "react-responsive";
 // Import Swiper styles
 
 import 'swiper/swiper.min.css';
@@ -20,28 +20,48 @@ function Slide() {
 
   return (
    <div className = {styles.block}>
-    <Swiper
-    
-    autoplay={{
-      "delay": 6000,
-      "disableOnInteraction": false
-    }}
-      grid={{"rows": 4}}
-      centeredSlides={true}
-      spaceBetween={50}
-      loop={true}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      
-    >
-      
-      <SwiperSlide className={styles.container}><div className={styles.img1}></div></SwiperSlide>
-      <SwiperSlide className={styles.container}><div className={styles.img2}></div></SwiperSlide>
-      <SwiperSlide className={styles.container}><div className={styles.img3}></div></SwiperSlide>
-      <SwiperSlide className={styles.container}><div className={styles.img4}></div></SwiperSlide>
-      
-    </Swiper>
+      <MediaQuery minWidth={401}>
+        <Swiper
+          autoplay={{
+          "delay": 6000,
+          "disableOnInteraction": false
+        }}
+          grid={{"rows": 4}}
+          centeredSlides={true}
+          spaceBetween={50}
+          loop={true}
+          slidesPerView={3}
+          navigation
+          pagination={{ clickable: true }}
+          
+        >
+          <SwiperSlide className={styles.container}><div className={styles.img1}></div></SwiperSlide>
+          <SwiperSlide className={styles.container}><div className={styles.img2}></div></SwiperSlide>
+          <SwiperSlide className={styles.container}><div className={styles.img3}></div></SwiperSlide>
+          <SwiperSlide className={styles.container}><div className={styles.img4}></div></SwiperSlide>
+        </Swiper>
+      </MediaQuery>
+      <MediaQuery maxWidth={400}>
+        <Swiper
+          autoplay={{
+          "delay": 6000,
+          "disableOnInteraction": false
+        }}
+          grid={{"rows": 4}}
+          centeredSlides={true}
+          spaceBetween={50}
+          loop={true}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          
+        >
+          <SwiperSlide className={styles.container}><div className={styles.img1}></div></SwiperSlide>
+          <SwiperSlide className={styles.container}><div className={styles.img2}></div></SwiperSlide>
+          <SwiperSlide className={styles.container}><div className={styles.img3}></div></SwiperSlide>
+          <SwiperSlide className={styles.container}><div className={styles.img4}></div></SwiperSlide>
+        </Swiper>
+      </MediaQuery>
     </div>
   );
   

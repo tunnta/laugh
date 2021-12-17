@@ -39,7 +39,6 @@ function Header(){
 
       <style jsx>{`
         header {
-          min-width: 1048px;
           padding: 0.05rem;
           color: #fff;
           background-color: #333;
