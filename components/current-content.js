@@ -92,7 +92,7 @@ export default function AutoGrid(props) {
   }
 return(
   <div>
-    <MediaQuery minWidth={401}>
+    <MediaQuery minWidth={415}>
       {max < 9 && arrayAll.length < 9&&(
           <Paper style={backgraoundStyle}>
             <div className={classes.root}>
@@ -182,7 +182,7 @@ return(
         </Paper>
       )}
     </MediaQuery>
-    <MediaQuery maxWidth={400}>
+    <MediaQuery maxWidth={414}>
       {max < 9 && arrayAll.length < 9&&(
           <Paper style={backgraoundStyle2}>
             <div className={classes.root}>

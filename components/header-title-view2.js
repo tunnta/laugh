@@ -105,7 +105,7 @@ return(
 
     {props.count === 1 && props.title[2] == "presence"&&(
       <div> 
-        <MediaQuery minWidth={414}>
+        <MediaQuery minWidth={415}>
           <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[2]}/></Paper>
           <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
@@ -120,7 +120,7 @@ return(
 
     {props.count === 1 && props.title[2] == "nothing"&&(
       <div>
-        <MediaQuery minWidth={414}>
+        <MediaQuery minWidth={415}>
           <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.paper2} ><FormDialog title = {props.title[0][0]}/></Paper>
           <Paper elevation={0} className={classes.paper3} ><AnswerPaper data = {props.title[1]}/></Paper>
@@ -135,7 +135,7 @@ return(
 
     {props.count === 0 &&(
       <div > 
-        <MediaQuery minWidth={414}>
+        <MediaQuery minWidth={415}>
           <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
           <Paper elevation={0} className={classes.paper2} ></Paper>
           <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>

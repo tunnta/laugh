@@ -20,7 +20,7 @@ function Slide() {
 
   return (
    <div className = {styles.block}>
-      <MediaQuery minWidth={414}>
+      <MediaQuery minWidth={415}>
         <Swiper
           autoplay={{
           "delay": 6000,
