@@ -199,7 +199,7 @@ return(
               {Array.map((array) => (
                 <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                   <Grid item >
-                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
+                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 60 + '%'}} >{array[0]}</Paper>
                   </Grid>
                 </Link>
               ))}
@@ -215,7 +215,7 @@ return(
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 60 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -238,7 +238,7 @@ return(
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 60 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -258,7 +258,7 @@ return(
                   {Array.map((array) => (
                     <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2], content: 0 }}}>
                       <Grid item >
-                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
+                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 60 + '%'}} >{array[0]}</Paper>
                       </Grid>
                     </Link>
                   ))}
