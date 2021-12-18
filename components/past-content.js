@@ -14,6 +14,14 @@ const useStyles = makeStyles(() => ({
     'left':'0',
     'display': 'block',
     'position':'absolute',
+    'margin-left':'5%',
+    'margin-top':'2%',
+  },
+  root2: {
+    flexGrow: 1,
+    'left':'0',
+    'display': 'block',
+    'position':'absolute',
     'margin-left':'1%',
     'margin-top':'2%',
   },
@@ -186,12 +194,12 @@ return(
     <MediaQuery maxWidth={414}>
       {max < 9 && arrayAll.length < 9&&(
         <Paper style={backgraoundStyle2}>
-          <div className={classes.root}>
+          <div className={classes.root2}>
             <Grid container spacing={1}>
               {Array.map((array) => (
                 <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                   <Grid item >
-                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
+                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
                   </Grid>
                 </Link>
               ))}
@@ -202,12 +210,12 @@ return(
 
       {max == 9 && Np == 0&&(
           <Paper style={backgraoundStyle2}>
-            <div className={classes.root}>
+            <div className={classes.root2}>
               <Grid container spacing={1}>
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -225,12 +233,12 @@ return(
 
       {Np > 0 && arrayAll.length - Np * 9 <= 9&&(
           <Paper style={backgraoundStyle2}>
-            <div className={classes.root}>
+            <div className={classes.root2}>
               <Grid container spacing={1}>
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -245,12 +253,12 @@ return(
       {Np > 0 && arrayAll.length - Np * 9 > 9&&(
           <div>
             <Paper style={backgraoundStyle2}>
-              <div className={classes.root}>
+              <div className={classes.root2}>
                 <Grid container spacing={1}>
                   {Array.map((array) => (
                     <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2], content: 0 }}}>
                       <Grid item >
-                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
+                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 70 + '%'}} >{array[0]}</Paper>
                       </Grid>
                     </Link>
                   ))}
