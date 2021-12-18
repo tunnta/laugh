@@ -141,9 +141,9 @@ return(
           <Paper elevation={0} className={classes.paper3} ><AnswerPaper0 data = {props.title[1]}/></Paper>
         </MediaQuery>
         <MediaQuery maxWidth={414}>
-          <Paper elevation={0} className={classes.paper} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
-          <Paper elevation={0} className={classes.paper1} ></Paper>
-          <Paper elevation={0} className={classes.paper2} ><AnswerPaper0 data = {props.title[1]}/></Paper>
+          <Paper elevation={0} className={classes.mobile} style = {{fontSize:props.title[0][0].size + 90 +'%'}}>{props.title[0][0].title}</Paper>
+          <Paper elevation={0} className={classes.mobile1} ></Paper>
+          <Paper elevation={0} className={classes.mobile2} ><AnswerPaper0 data = {props.title[1]}/></Paper>
         </MediaQuery>
       </div>
     )}
