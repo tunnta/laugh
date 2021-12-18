@@ -35,7 +35,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:920,top:30,textAlign:"center"}
-const backgraoundStyle2 = {'position':'relative', padding:20,'left': "3%",height:'60vh',width:'94vw',top:30}
+const backgraoundStyle2 = {'position':'relative', padding:20,'left': "3%",height:'60vh',width:'94vw',top:30,textAlign:"center"}
 const arrow = {'position':'relative','left':'85%'}
 const arrowhidden = {'visibility':'hidden'}
 
@@ -191,7 +191,7 @@ return(
               {Array.map((array) => (
                 <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                   <Grid item >
-                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 130 + '%'}} >{array[0]}</Paper>
+                    <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
                   </Grid>
                 </Link>
               ))}
@@ -207,7 +207,7 @@ return(
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 130 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -230,7 +230,7 @@ return(
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
-                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 130 + '%'}} >{array[0]}</Paper>
+                      <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
                     </Grid>
                   </Link>
                 ))}
@@ -250,7 +250,7 @@ return(
                   {Array.map((array) => (
                     <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2], content: 0 }}}>
                       <Grid item >
-                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 130 + '%'}} >{array[0]}</Paper>
+                        <Paper className={classes.paper2} style = {{fontSize:array[1] - 90 + '%'}} >{array[0]}</Paper>
                       </Grid>
                     </Link>
                   ))}
