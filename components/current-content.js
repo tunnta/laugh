@@ -26,7 +26,7 @@ const useStyles = makeStyles(() => ({
     'margin-top':'2%',
   },
   paper: {
-    height:'30vh',
+    height:194,
     width:250,
     padding:'10% 10% 0% 10%',
     wordBreak:'break-all',
