@@ -34,7 +34,7 @@ const useStyles = makeStyles(() => ({
   },
   paper2: {
     'display': 'block',
-    height:'15vh',
+    height:'12vh',
     width:'29vw',
     padding:'3% 3% 0% 3%',
     overflow: "hidden",
