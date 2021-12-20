@@ -23,7 +23,7 @@ function CreateTitle(props) {
     const textfield={width:270,'bottom':'0','position':'absolute',margin:"0% 0% 55% 0%",'right':'27%'}
     const lookImage={'position':'absolute',margin:'10% 3% 0% 3%',textAlign:"center",'whiteSpace':'preLine',"fontSize":select+"%"}
     const selectStyle={'right':'10%','position':'absolute',width:60}
-    const typeStyle={'marginTop':'40%','position':'absolute',"fontSize":'60%','textAlign':'center'}
+    const typeStyle={'marginTop':'40%','position':'absolute'}
     
     const paperMobileStyle={'position':'relative', padding :20,height:450,width:'70vw', margin:"20px auto"}
     const textfieldMobile={'bottom':'0','position':'absolute',margin:"0 0 90% 0", left: '50%',transform: 'translateX(-50%)','-webkit-transform': 'translateX(-50%)','-ms-transform': 'translateX(-50%)',}
@@ -111,7 +111,7 @@ return(
           <div>
             <Grid>
               <Paper elevation={10} style={paperStyle}>
-                <Typography  style={typeStyle} variant="h5" align='center' noWrap>
+                <Typography  style={typeStyle} variant="h5" align='center' fontSize='40%' noWrap>
                   現在のお題の掲載期間終了までお待ちください
                 </Typography> 
               </Paper>
