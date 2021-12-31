@@ -45,7 +45,7 @@ function FormDialog(props) {
   if (user && props.title == "presence") return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open form dialog
+        回答フォーム
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle></DialogTitle>
@@ -101,7 +101,7 @@ function FormDialog(props) {
     if(!user) return(
       <div>
         <Button variant="outlined" onClick={handleClickOpen}>
-          Open form dialog
+          回答フォーム
         </Button>
         <Dialog open={open} onClose={handleClose}>
           <DialogTitle></DialogTitle>
