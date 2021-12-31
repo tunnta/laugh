@@ -1,4 +1,4 @@
-import PromAppBar from '../components/header-title-view2'
+import PromAppBar from '../components/TopFrame'
 import { useRouter } from 'next/router'
 import useSWR from 'swr'
 
