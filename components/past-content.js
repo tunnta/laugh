@@ -30,7 +30,8 @@ const useStyles = makeStyles(() => ({
     width:250,
     padding:'10% 10% 0% 10%',
     wordBreak:'break-all',
-    overflow: "hidden"
+    overflow: "hidden",
+    cursor: 'pointer',
   },
   paper2: {
     'display': 'block',
@@ -39,6 +40,7 @@ const useStyles = makeStyles(() => ({
     padding:'3% 3% 0% 3%',
     overflow: "hidden",
     wordBreak:'break-all',
+    cursor: 'pointer',
   },
 }));
 
