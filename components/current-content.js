@@ -30,14 +30,16 @@ const useStyles = makeStyles(() => ({
     width:250,
     padding:'10% 10% 0% 10%',
     wordBreak:'break-all',
-    overflow: "hidden",
+    overflow: 'hidden',
+    cursor: 'pointer',
   },
   paper2: {
     height:'15vh',
     width:'29vw',
     padding:'10% 10% 0% 10%',
-    overflow: "hidden",
+    overflow: 'hidden',
     wordBreak:'break-all',
+    cursor: 'pointer',
   },
 }));
 
