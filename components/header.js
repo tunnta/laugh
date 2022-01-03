@@ -45,7 +45,7 @@ function Header(){
         }
         nav {
           max-width: 42rem;
-          margin: 1.5rem auto;
+          margin: 1.2rem auto;
           margin-left: 80%;
         }
         ul {
