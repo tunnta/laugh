@@ -22,10 +22,7 @@ function Slide() {
    <div className = {styles.block}>
       <MediaQuery minWidth={415}>
         <Swiper
-          autoplay={{
-          "delay": 6000,
-          "disableOnInteraction": false
-        }}
+         
           grid={{"rows": 4}}
           centeredSlides={true}
           spaceBetween={50}
@@ -43,10 +40,7 @@ function Slide() {
       </MediaQuery>
       <MediaQuery maxWidth={414}>
         <Swiper
-          autoplay={{
-          "delay": 6000,
-          "disableOnInteraction": false
-        }}
+          
           grid={{"rows": 4}}
           centeredSlides={true}
           spaceBetween={50}
