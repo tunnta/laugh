@@ -16,12 +16,12 @@ function Header(){
               <>
                 <li>
                 <Link href="/userpage">
-                  <a>User</a>
+                  <a>ユーザー</a>
                 </Link>
                 </li>{' '}
                 <li>
                 <Link href="/api/auth/logout">
-                  <a>Logout</a>
+                  <a>ログアウト</a>
                 </Link>
                 </li>
               </>
@@ -29,7 +29,7 @@ function Header(){
               <>
                 <li>
                 <Link href="/api/auth/login">
-                  <a>Login</a>
+                  <a>ログイン</a>
                 </Link>
                 </li>
               </>
@@ -46,6 +46,7 @@ function Header(){
         nav {
           max-width: 42rem;
           margin: 1.5rem auto;
+          margin-left: 80%;
         }
         ul {
           display: flex;
