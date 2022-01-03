@@ -11,7 +11,7 @@ export async function getServerSideProps() {
   const posts = await res.json()
   const res2 =  await fetch('https://kakkowarai.herokuapp.com/title_content0')
   const posts2 = await res2.json()
-  const res3 =  await fetch('http://kakkowarai.herokuapp.com/title_rank')
+  const res3 =  await fetch('https://kakkowarai.herokuapp.com/title_rank')
   const posts3 = await res3.json()
   // { props: { posts } }を返すことで、
   // Blog コンポーネントはビルド時に`posts`を prop として受け取る
