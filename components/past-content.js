@@ -26,8 +26,8 @@ const useStyles = makeStyles(() => ({
     'margin-top':'2%',
   },
   paper: {
-    height:'30vh',
-    width:'19.5vw',
+    height:194,
+    width:250,
     padding:'10% 10% 0% 10%',
     wordBreak:'break-all',
     overflow: "hidden",
@@ -44,7 +44,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:'71.7vw',top:30,textAlign:"center"}
+const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:920,top:30,textAlign:"center"}
 const backgraoundStyle2 = {'position':'relative', padding:20,'left': "3%",height:'60vh',width:'94vw',top:30,textAlign:"center"}
 const arrow = {'position':'relative','left':'85%'}
 const arrowhidden = {'visibility':'hidden'}
