@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
   },
   paper: {
     height:'30vh',
-    width:'20.5vw',
+    width:'20vw',
     padding:'10% 10% 0% 10%',
     wordBreak:'break-all',
     overflow: 'hidden',
