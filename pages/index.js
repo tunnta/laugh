@@ -3,7 +3,7 @@ import Header from '../components/header'
 import PastContent from '../components/past-content'
 import AutoGrid from '../components/current-content'
 import FolderList from '../components/ranklist'
-
+import MediaQuery from "react-responsive";
 
 export async function getServerSideProps() {
   // posts を取得するため外部 API endpoint を読み込む
@@ -26,16 +26,22 @@ export async function getServerSideProps() {
 
 function Index({posts,posts2,posts3}) {
   return (
-    <div>    
+    <div>
       <Header/>
       <Slide/>
-      <div style = {{'display':'flex','justify-content': 'center','minWidth':'1200px'}}>
-        <div style = {{'display':'flex','flexWrap':'wrap','flex-direction':'column'}}>
+      <MediaQuery minWidth={415}>  
+        <div style = {{'display':'flex','justify-content': 'center','minWidth':'1200px'}}>
+          <div style = {{'display':'flex','flexWrap':'wrap','flex-direction':'column'}}>
+            <AutoGrid title = {posts}/>
+            <PastContent title = {posts2}/>
+          </div>
+          <FolderList rank = {posts3}/>
+        </div>
+      </MediaQuery>
+      <MediaQuery maxWidth={414}> 
           <AutoGrid title = {posts}/>
           <PastContent title = {posts2}/>
-        </div>
-        <FolderList rank = {posts3}/>
-      </div>
+      </MediaQuery>
     </div>
   )
 }

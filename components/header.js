@@ -38,7 +38,7 @@ function Header(){
       </nav>
 
       <style jsx>{`
-      @media screen and (max-width:414){
+      @media (max-width:414){
         header {
           padding: 0.05rem;
           color: #fff;
@@ -46,7 +46,7 @@ function Header(){
 
         }
       }
-      @media screen and (min-width:415){
+      @media (min-width:415){
         header {
           padding: 0.05rem;
           color: #fff;
