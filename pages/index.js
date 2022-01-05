@@ -30,7 +30,7 @@ function Index({posts,posts2,posts3}) {
       
       <Header/>
       <Slide/>
-      <div style = {{margin:'0 auto'}}>
+      <div style = {{'display':'flex'}}>
       <FolderList rank = {posts3}/>
       <AutoGrid title = {posts}/>
       </div>
