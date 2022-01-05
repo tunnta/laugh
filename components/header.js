@@ -38,11 +38,22 @@ function Header(){
       </nav>
 
       <style jsx>{`
+      @media screen and (max-width:414){
         header {
           padding: 0.05rem;
           color: #fff;
           background-color: #333;
+
         }
+      }
+      @media screen and (min-width:415){
+        header {
+          padding: 0.05rem;
+          color: #fff;
+          background-color: #333;
+          min-width: 1200px;
+        }
+      }
         nav {
           max-width: 42rem;
           margin: 1.2rem auto;

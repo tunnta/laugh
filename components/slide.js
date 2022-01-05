@@ -19,6 +19,7 @@ function Slide() {
   
 
   return (
+  <>
    <div className = {styles.block}>
       <MediaQuery minWidth={415}>
         <Swiper
@@ -38,6 +39,8 @@ function Slide() {
           <SwiperSlide className={styles.container}><div className={styles.img4}></div></SwiperSlide>
         </Swiper>
       </MediaQuery>
+    </div> 
+    <div className = {styles.block2}>
       <MediaQuery maxWidth={414}>
         <Swiper
           
@@ -57,6 +60,7 @@ function Slide() {
         </Swiper>
       </MediaQuery>
     </div>
+  </>
   );
   
 };
