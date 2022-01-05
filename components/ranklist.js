@@ -5,14 +5,14 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@material-ui/core/Typography';
-import Paper from '@material-ui/core/Paper';
+
 
 export default function FolderList(props) {
 
 
   return (
-    <Paper>
-    <List sx={{'boxShadow': '0 0 1.5px rgba(0,0,0,0.3)', 'borderRadius': '4px', width: '100%', maxWidth: 250, bgcolor: 'background.paper','position':'absolute','marginLeft':'3%' }}>
+    
+    <List sx={{'boxShadow': '0 0 1.5px rgba(0,0,0,0.3)', 'borderRadius': '4px', width: 220,height: 280, bgcolor: 'background.paper','position':'relative','marginLeft':'1%' }}>
       <Typography variant="h5" style ={{"textAlign":"center"}} noWrap>Ranking</Typography>
       <ListItem sx={{"margin-left": "20%"}}>
         <ListItemAvatar>
@@ -39,6 +39,6 @@ export default function FolderList(props) {
         <ListItemText primary = {props.rank[2].name} secondary={"good" + props.rank[2].count} />
       </ListItem>
     </List>
-    </Paper>
+    
   );
 }
