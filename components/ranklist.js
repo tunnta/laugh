@@ -11,6 +11,7 @@ export default function FolderList(props) {
 
 
   return (
+    <Paper>
     <List sx={{'boxShadow': '0 0 1.5px rgba(0,0,0,0.3)', 'borderRadius': '4px', width: '100%', maxWidth: 250, bgcolor: 'background.paper','position':'absolute','marginLeft':'3%' }}>
       <Typography variant="h5" style ={{"textAlign":"center"}} noWrap>Ranking</Typography>
       <ListItem sx={{"margin-left": "20%"}}>
@@ -38,5 +39,6 @@ export default function FolderList(props) {
         <ListItemText primary = {props.rank[2].name} secondary={"good" + props.rank[2].count} />
       </ListItem>
     </List>
+    </Paper>
   );
 }
