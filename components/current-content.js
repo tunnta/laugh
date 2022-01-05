@@ -27,7 +27,7 @@ const useStyles = makeStyles(() => ({
   },
   paper: {
     height:'30vh',
-    width:'19vw',
+    width:'20vw',
     padding:'10% 10% 0% 10%',
     wordBreak:'break-all',
     overflow: 'hidden',
@@ -43,7 +43,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:'71.5vw',textAlign:"center"}
+const backgraoundStyle = {'position':'relative', padding:20,'left': "3%",height:'112vh',width:'71.6vw',textAlign:"center"}
 const backgraoundStyle2 = {'position':'relative', padding:20,'left': "3%",height:'60vh',width:'94vw',textAlign:"center"}
 const arrow = {'position':'relative','left':'85%'}
 const arrowhidden = {'visibility':'hidden'}
