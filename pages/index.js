@@ -29,7 +29,7 @@ function Index({posts,posts2,posts3}) {
     <div>    
       <Header/>
       <Slide/>
-      <div style = {{'display':'flex','flexWrap':'wrap','position':'relative',left:'50%',transform: 'translateX(-50%)','-webkit-transform': 'translateX(-50%)','-ms-transform': 'translateX(-50%)'}}>
+      <div style = {{'display':'flex','flexWrap':'wrap',position:'relative',marginLeft:'0',marginRight:'0'}}>
         <AutoGrid title = {posts}/>
         <FolderList rank = {posts3}/>
         <PastContent title = {posts2}/>
