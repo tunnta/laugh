@@ -26,16 +26,14 @@ export async function getServerSideProps() {
 
 function Index({posts,posts2,posts3}) {
   return (
-    <div>
-      
+    <div>    
       <Header/>
       <Slide/>
-      <div style = {{'display':'flex'}}>
-      <FolderList rank = {posts3}/>
-      <AutoGrid title = {posts}/>
+      <div style = {{'display':'flex','flexWrap':'wrap'}}>
+        <FolderList rank = {posts3}/>
+        <AutoGrid title = {posts}/>
+        <PastContent title = {posts2}/>
       </div>
-      <PastContent title = {posts2}/>
-      
     </div>
   )
 }

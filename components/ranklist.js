@@ -11,7 +11,7 @@ export default function FolderList(props) {
 
 
   return (
-    <List sx={{'boxShadow': '0 0 1.5px rgba(0,0,0,0.3)', 'borderRadius': '4px', width: '100%', maxWidth: 250, bgcolor: 'background.paper','right':'0','position':'absolute','marginRight':'3%' }}>
+    <List sx={{'boxShadow': '0 0 1.5px rgba(0,0,0,0.3)', 'borderRadius': '4px', width: '100%', maxWidth: 250, bgcolor: 'background.paper','position':'absolute','marginRight':'3%' }}>
       <Typography variant="h5" style ={{"textAlign":"center"}} noWrap>Ranking</Typography>
       <ListItem sx={{"margin-left": "20%"}}>
         <ListItemAvatar>
