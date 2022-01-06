@@ -11,7 +11,7 @@ function Header(){
       <MediaQuery minWidth={415}>
         <header style ={{'min-width':'1200px'}}>
           <nav>
-            <ul style ={{'marginLeft': '80%'}}>
+            <ul>
               {!loading &&
                 (user ? (
                   <>
