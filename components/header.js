@@ -75,7 +75,7 @@ function Header(){
             padding: 0.05rem;
             color: #fff;
             background-color: #333;
-            min-width:1200px;
+            
           }
           nav {
             max-width: 42rem;
