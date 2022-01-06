@@ -20,3 +20,4 @@ Ruby 2.6.7
 Auth0  
 Heroku  
 Vercel  
+![sample](./スクリーンショット (48).png)
