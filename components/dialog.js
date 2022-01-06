@@ -73,7 +73,7 @@ function FormDialog(props) {
   if (user && props.title.id) return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open form dialog
+       回答フォーム
       </Button>
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle></DialogTitle>
