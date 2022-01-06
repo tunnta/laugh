@@ -80,13 +80,14 @@ function Header(){
           nav {
             max-width: 42rem;
             margin: 1.2rem auto;
-            float: right;
+            
           }
           ul {
             display: flex;
             list-style: none;
             margin-left: 0;
             padding-left: 0;
+            margin: 0 0 0 auto;
           }
           li {
             margin-right: 1rem;
