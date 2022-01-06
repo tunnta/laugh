@@ -80,7 +80,7 @@ function Header(){
           nav {
             max-width: 42rem;
             margin: 1.2rem auto;
-            margin: 0 0 0 auto;
+            float: right;
           }
           ul {
             display: flex;
