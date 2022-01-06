@@ -20,4 +20,16 @@ Ruby 2.6.7
 Auth0  
 Heroku  
 Vercel  
-![sample](./スクリーンショット (48).png)
+
+<p align="center">
+  <img src="./スクリーンショット%20(76).png"  width="400px">
+  <img src="./スクリーンショット%20(48).png"  width="400px">
+  <img src="./スクリーンショット%20(64).png"  width="400px">
+  <img src="./スクリーンショット%20(71).png"  width="400px">
+  <img src="./スクリーンショット%20(72).png"  width="400px">
+  <img src="./スクリーンショット%20(79).png"  width="400px">
+  <img src="./スクリーンショット%20(80).png"  width="400px">
+  <img src="./スクリーンショット%20(63).png"  width="400px">
+  <img src="./スクリーンショット%20(75).png"  width="400px">
+</p>
+
