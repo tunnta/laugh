@@ -10,7 +10,7 @@ function Header(){
     <>
       <MediaQuery minWidth={415}>
         <header style ={{'min-width':'1200px'}}>
-          <nav style ={{'marginLeft': '60%'}}>
+          <nav>
             <ul>
               {!loading &&
                 (user ? (
@@ -80,7 +80,7 @@ function Header(){
           nav {
             max-width: 42rem;
             margin: 1.2rem auto;
-            
+            right: 0
           }
           ul {
             display: flex;
