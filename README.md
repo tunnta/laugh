@@ -19,15 +19,22 @@ Auth0
 Heroku  
 Vercel  
 # 使い方
-<p align="center">
-  <img src="./スクリーンショット%20(76).png"  width="400px">
-  <img src="./スクリーンショット%20(48).png"  width="400px">
-  <img src="./スクリーンショット%20(64).png"  width="400px">
-  <img src="./スクリーンショット%20(71).png"  width="400px">
-  <img src="./スクリーンショット%20(72).png"  width="400px">
-  <img src="./スクリーンショット%20(79).png"  width="400px">
-  <img src="./スクリーンショット%20(80).png"  width="400px">
-  <img src="./スクリーンショット%20(63).png"  width="400px">
-  <img src="./スクリーンショット%20(75).png"  width="400px">
-</p>
+　  
+<img src="./スクリーンショット%20(76).png"  width="400px" align="center">  
+Topページ  
+<img src="./スクリーンショット%20(48).png"  width="400px">  
+ログイン画面。  
+各種snsでのログインを想定。  
+<img src="./スクリーンショット%20(64).png"  width="400px">  
+ログイン後、top画面に遷移。  
+top画面ヘッダー右のユーザーをクリック後、ユーザー画面に遷移。  
+お題を投稿。入力をリアルタイムにプレビュー。    
+<img src="./スクリーンショット%20(71).png"  width="400px">
+
+<img src="./スクリーンショット%20(72).png"  width="400px">
+<img src="./スクリーンショット%20(79).png"  width="400px">
+<img src="./スクリーンショット%20(80).png"  width="400px">
+<img src="./スクリーンショット%20(63).png"  width="400px">
+<img src="./スクリーンショット%20(75).png"  width="400px">
+
 
