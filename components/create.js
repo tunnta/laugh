@@ -27,7 +27,7 @@ function CreateTitle(props) {
     
     const paperMobileStyle={'position':'relative', padding :20,height:450,width:'70vw', margin:"20px auto"}
     const textfieldMobile={'bottom':'0','position':'absolute',margin:"0 0 90% 0", left: '50%',transform: 'translateX(-50%)','-webkit-transform': 'translateX(-50%)','-ms-transform': 'translateX(-50%)',}
-    const paper3StyleMobile={'position':'absolute','bottom': '0%',height:'170px',width:'200px', top: '50%',left: '50%',transform: 'translateX(-50%)','-webkit-transform': 'translateX(-50%)','-ms-transform': 'translateX(-50%)',"overflow": "hidden","fontSize":select - 30 +"%"}
+    const paper3StyleMobile={'position':'absolute','bottom': '0%',height:'170px',width:'200px', top: '50%',left: '50%',transform: 'translateX(-50%)','-webkit-transform': 'translateX(-50%)','-ms-transform': 'translateX(-50%)',"overflow": "hidden","fontSize":select - 60 +"%"}
     const { user } = useUser();
     
     const doReload=()=>{
