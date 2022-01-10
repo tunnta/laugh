@@ -11,7 +11,7 @@ snsユーザー認証(Auth0)
 PCとスマホで画面の異なる、レスポンシブ仕様。  
 # 技術
 HTML/CSS  
-React  
+javascript  
 Next.js  
 Ruby on Rails 6.1.4.1  
 Ruby 2.6.7  
