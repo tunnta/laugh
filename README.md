@@ -3,7 +3,10 @@
 # 目的
 大喜利を通したコミュニケーションを誰もが楽しめるように、アクセスのしやすさや直感的な使用感を重視しました。
 # URL
-https://laugh.vercel.app/
+https://laugh.vercel.app/  
+テストアカウント  
+email:test@email.com  
+pw:Test1111  
 # 機能
 snsユーザー認証(Auth0)  
 お題の投稿、お題に対する回答の投稿  
