@@ -197,7 +197,7 @@ return(
       {max < 9 && arrayAll.length < 9&&(
         <Paper style={backgraoundStyle2}>
           <div className={classes.root2}>
-            <Grid container spacing={1}>
+            <Grid container spacing={2}>
               {Array.map((array) => (
                 <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                   <Grid item >
@@ -213,7 +213,7 @@ return(
       {max == 9 && Np == 0&&(
           <Paper style={backgraoundStyle2}>
             <div className={classes.root2}>
-              <Grid container spacing={1}>
+              <Grid container spacing={2}>
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
