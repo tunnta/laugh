@@ -22,7 +22,7 @@ const useStyles = makeStyles(() => ({
     'left':'0',
     'display': 'block',
     'position':'absolute',
-    'margin-left':'1.5%',
+    'margin-left':'1.6%',
     'margin-top':'2%',
   },
   paper: {
