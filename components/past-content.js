@@ -45,7 +45,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 const backgraoundStyle = {'position':'relative', padding:20,height:'112vh',width:920,top:30,textAlign:"center"}
-const backgraoundStyle2 = {'position':'relative', 'paddingLeft':20,'left': "3%",height:'60vh',width:'94vw',top:30,textAlign:"center"}
+const backgraoundStyle2 = {'position':'relative', 'padding':20,'left': "3%",height:'60vh',width:'94vw',top:30,textAlign:"center"}
 const arrow = {'position':'relative','left':'85%'}
 const arrowhidden = {'visibility':'hidden'}
 
@@ -236,7 +236,7 @@ return(
       {Np > 0 && arrayAll.length - Np * 9 <= 9&&(
           <Paper style={backgraoundStyle2}>
             <div className={classes.root2}>
-              <Grid container spacing={1}>
+              <Grid container spacing={2}>
                 {Array.map((array) => (
                   <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2] , content: 0}}}>
                     <Grid item >
@@ -256,7 +256,7 @@ return(
           <div>
             <Paper style={backgraoundStyle2}>
               <div className={classes.root2}>
-                <Grid container spacing={1}>
+                <Grid container spacing={2}>
                   {Array.map((array) => (
                     <Link key = {array[2]} href={{pathname:'/[id]', query: { id: array[2], content: 0 }}}>
                       <Grid item >
