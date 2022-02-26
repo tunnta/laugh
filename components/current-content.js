@@ -43,7 +43,7 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const backgraoundStyle = {'position':'relative', padding:20,height:920,width:920,textAlign:"center"}
+const backgraoundStyle = {'position':'relative', padding:20,height:880,width:920,textAlign:"center"}
 const backgraoundStyle2 = {'position':'relative', padding:20,'left': "3%",height:'60vh',width:'94vw',textAlign:"center"}
 const arrow = {'position':'relative','left':'85%'}
 const arrowhidden = {'visibility':'hidden'}
